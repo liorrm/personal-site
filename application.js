@@ -23,7 +23,7 @@ $(document).ready(function() {
     { "What language do most people speak in Chennai, India?": "Tamil, a Dravidian language"
     },
 
-    { "True or false: There are most Muslims in China than there are in Syria": "True!"
+    { "True or false: There are more Muslims in China than there are in Syria": "True!"
     },
 
     { "What is the second most Mormon state in the country?": "Idaho, at 26,000 Mormons per 100,000 people"
@@ -49,11 +49,20 @@ $(document).ready(function() {
     var selection = geoquestions[Math.floor(Math.random() * geoquestions.length)]
 
     $('.hidden-stuff').text(Object.keys(selection)[0])
-
     $('.tell-me').removeClass("hidden")
     $('.tell-me').on('click', function(){
       $('.answer').text(selection[Object.keys(selection)[0]])
     })
+  })
+
+  $('.airplane').on("click", function() {
+    $('.airplane-img').removeClass("hidden")
+    $('.airplane-img').animate({
+      right: "1400px"
+    }, 4000, function(){
+      document.getElementsByClassName("airplane-img")[0].style.right = "-200px";
+    })
+
   })
 
 });
