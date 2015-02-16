@@ -17,6 +17,7 @@ body {
 
 .airplane-img {
   position: absolute;
+  top: 9%;
   right: -200px;
 }
 
@@ -24,6 +25,10 @@ body {
 @media (max-width: 600px) {
   .jumbotron p {
     font-size: 1.1em;
+  }
+
+  .greeting {
+    font-size: 1.7em;
   }
 
   .navbar-brand.foreign {

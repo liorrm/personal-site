@@ -35,12 +35,12 @@ $(document).ready(function() {
 
 
   $('.quirk').on('click', function(event) {
-    $('.tell-me').addClass("hidden")
     $('.answer').text("")
     event.preventDefault();
   });
 
   $('.polyglot').on('click', function() {
+    $('.tell-me').addClass("hidden")
     $('.hidden-stuff').text(polyglot[Math.floor(Math.random() * polyglot.length)])
   });
 
