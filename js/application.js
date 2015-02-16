@@ -35,11 +35,11 @@ $(document).ready(function() {
 
 
   $('.quirk').on('click', function(event) {
-    $('.answer').text("")
     event.preventDefault();
   });
 
   $('.polyglot').on('click', function() {
+    $('.answer').text("")
     $('.tell-me').addClass("hidden")
     $('.hidden-stuff').text(polyglot[Math.floor(Math.random() * polyglot.length)])
   });
@@ -59,8 +59,9 @@ $(document).ready(function() {
     $('.airplane-img').removeClass("hidden")
     $('.airplane-img').animate({
       right: "1400px"
-    }, 4000, function(){
+    }, 4500, function(){
       document.getElementsByClassName("airplane-img")[0].style.right = "-200px";
+      $('.airplane-img').addClass("hidden")
     })
 
   })
