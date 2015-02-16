@@ -1,0 +1,27 @@
+body {
+  font-family: "Helvetica Neue";
+  font-weight: 200;
+}
+
+.jumbotron {
+  background-color: white;
+}
+
+.jumbotron p {
+  font-size: 2em;
+}
+
+.greeting {
+  font-size: 2.5em;
+}
+
+
+@media (max-width: 600px) {
+  .jumbotron p {
+    font-size: 1.1em;
+  }
+
+  .navbar-brand.foreign {
+    display: none;
+  }
+}
