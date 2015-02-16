@@ -17,7 +17,7 @@ $(document).ready(function() {
 
     { "How many countries lie between Norway and North Korea?": "One — Russia!" },
 
-    { "What state lies between Texas and Colorado?": "Oklahoma, though you could make an argument for New Mexico — look at a map"
+    { "What states lie between Texas and Colorado?": "Oklahoma & New Mexico"
     },
 
     { "What language do most people speak in Chennai, India?": "Tamil, a Dravidian language"
