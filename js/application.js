@@ -66,7 +66,7 @@ $(document).ready(function() {
         right: "108%"
         }, 3000, function(){
           var plane = document.getElementsByClassName("airplane-img")[0]
-          plane.style.right = "-14%";
+          plane.style.right = "-25%";
           plane.style.top = (Math.floor(Math.random() * (90 - 8 + 1)) + 8) + "%"
         $('.airplane-img').addClass("hidden")
       })
