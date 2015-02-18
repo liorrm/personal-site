@@ -22,6 +22,12 @@ body {
   right: -200px;
 }
 
+.a380-airplane-img {
+  position: absolute;
+  left: 30%;
+  bottom: -300px;
+}
+
 
 @media (max-width: 600px) {
   .jumbotron p {

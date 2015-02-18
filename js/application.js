@@ -33,7 +33,6 @@ $(document).ready(function() {
 
   ]
 
-
   $('.quirk').on('click', function(event) {
     event.preventDefault();
   });
@@ -55,11 +54,36 @@ $(document).ready(function() {
     })
   })
 
+
+
   $('.airplane').on("click", function() {
-    $('.airplane-img').removeClass("hidden")
+    var tripleSeven = $('.airplane-img')
+    var a380 = $('.a380-airplane-img')
+    var airplanes = [tripleSeven, a380]
+    var airplane = airplanes[Math.floor(Math.random() * airplanes.length)]
+
+    if (airplane == tripleSeven) {
+      $('.airplane-img').removeClass("hidden")
+      $('.airplane-img').animate({
+        right: "1400px"
+        }, 4500, function(){
+          document.getElementsByClassName("airplane-img")[0].style.right = "-200px";
+        $('.airplane-img').addClass("hidden")
+      })
+    } else {
+      $('.a380-airplane-img').removeClass("hidden")
+      $('.a380-airplane-img').animate({
+          bottom: "1200px"
+        }, 4000, function() {
+          document.getElementsByClassName("a380-airplane-img")[0].style.bottom = "-300px";
+        $('.a380-airplane-img').addClass("hidden")
+        }
+      )
+    }
+
     $('.airplane-img').animate({
       right: "1400px"
-    }, 4500, function(){
+    }, 5000, function(){
       document.getElementsByClassName("airplane-img")[0].style.right = "-200px";
       $('.airplane-img').addClass("hidden")
     })
