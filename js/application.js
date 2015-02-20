@@ -9,7 +9,7 @@ $(document).ready(function() {
 
     { "What is the only African country in which Spanish is an official language?": "Equatorial Guinea" },
 
-    { "What are the only two doubly-landlocked countries in the world?": "Liechtenstein in Central Europe and Uzbekistan in Central Asia" },
+    { "What are the only two doubly-landlocked countries in the world?": "Liechtenstein and Uzbekistan" },
 
     { "What city is commonly regarded as the southernmost city in the world?": "Ushuaia, Argentina" },
 
