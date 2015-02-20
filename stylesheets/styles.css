@@ -19,13 +19,23 @@ body {
 .airplane-img {
   position: absolute;
   top: 9%;
-  right: -14%;
+  right: -50%;
 }
 
 .a380-airplane-img {
   position: absolute;
   left: 30%;
-  bottom: -37%;
+  bottom: -40%;
+}
+
+/*.jet-img {
+  height: 100%;
+  width: 100%;
+}*/
+
+.nile {
+  height: 60%;
+  width: 60%;
 }
 
 
