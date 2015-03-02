@@ -37,7 +37,7 @@ $(document).ready(function() {
 
     { "In what country is the mouth of the Danube River?": "Romania" },
 
-    { "Which country has the higher per capita gross domestic product — Yemen or Oman?": "Oman, and it's about 16 times that of Yemen!" },
+    { "Which country has the higher per capita gross domestic product — Yemen or Oman?": "Oman, and its GDP is about 16 times that of Yemen!" },
 
     { "If you were to look at a population density map of Egypt, what shape would the heavily populated areas make, and why?": "It roughly resembles a flower because of the importance of the Nile River and its delta: <br> <img class='nile' src='/img/nile-delta.jpg' />" }
 
