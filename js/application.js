@@ -74,23 +74,32 @@ $(document).ready(function() {
 
     if (airplane == tripleSeven) {
       $('.airplane-img').removeClass("hidden")
+
+      if ( $(window).width() > 400 ) {
+        duration = 3500
+      } else { duration = 2500 }
+
       $('.airplane-img').animate({
         right: "108%"
-        }, 3000, function(){
+        }, duration, function(){
+          $('.airplane-img').addClass("hidden")
           var plane = document.getElementsByClassName("airplane-img")[0]
-          plane.style.right = "-50%";
+          plane.style.right = "-40%";
           plane.style.top = (Math.floor(Math.random() * (90 - 8 + 1)) + 8) + "%"
-        $('.airplane-img').addClass("hidden")
       })
     } else {
       $('.a380-airplane-img').removeClass("hidden")
+      var duration
+      if ( $(window).height() > 400 ) {
+        duration = 3000
+      } else { duration = 2500 }
       $('.a380-airplane-img').animate({
           bottom: "100%"
-        }, 2500, function() {
+        }, duration, function() {
+          $('.a380-airplane-img').addClass("hidden")
           var plane = document.getElementsByClassName("a380-airplane-img")[0]
           plane.style.bottom = "-40%";
           plane.style.left = (Math.floor(Math.random() * (70 - 15 + 1)) + 15) + "%"
-        $('.a380-airplane-img').addClass("hidden")
         }
       )
     }
